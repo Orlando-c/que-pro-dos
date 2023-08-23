@@ -1,0 +1,108 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<style>  
+@import url('https://fonts.googleapis.com/css?family=Jost');
+.button {
+  background-color: #006ddb;
+  font-family: 'Jost';
+  font-size: 24px;
+  width: 30px;
+  color: #fefefe;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
+}
+    
+.button:hover {
+    background-color: #3b9dff;
+}
+    
+body {
+  font-family: 'Jost';
+  background: #1a1a1a;
+  color: #fefefe;
+  text-align: center;
+}
+    
+h1 {
+  font-family: 'Jost';
+  font-weight: normal;
+  font-size: 3rem;
+  margin-top: 0;
+  text-align: center;
+}
+    
+input[type=number], select {
+    background-color: #006ddb;
+    color: #fefefe;
+    width: 55px;
+    height: 13px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #fefefe;
+    border-radius: 8px;
+    font-size: 20;
+}
+    
+input[type=number]:hover {
+    background-color: #3b9dff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #006ddb;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3b9dff;
+}
+</style>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1><br/>
+    <a class="button" href="home.html">Home</a><br/>
+    <h1> </h1>
+    <input type="text" id="display" disabled><br>
+    <button class="button" onclick="addToDisplay('1')">1</button>
+    <button class="button" onclick="addToDisplay('2')">2</button>
+    <button class="button" onclick="addToDisplay('3')">3</button>
+    <button class="button" onclick="addToDisplay('+')">+</button><br>
+    <button class="button" onclick="addToDisplay('4')">4</button>
+    <button class="button" onclick="addToDisplay('5')">5</button>
+    <button class="button" onclick="addToDisplay('6')">6</button>
+    <button class="button" onclick="addToDisplay('-')">-</button><br>
+    <button class="button" onclick="addToDisplay('7')">7</button>
+    <button class="button" onclick="addToDisplay('8')">8</button>
+    <button class="button" onclick="addToDisplay('9')">9</button>
+    <button class="button" onclick="addToDisplay('*')">*</button><br>
+    <button class="button" onclick="addToDisplay('0')">0</button>
+    <button class="button" onclick="addToDisplay('/')">/</button>
+    <button class="button" onclick="calculate()">=</button><br>
+    <script type="text/javascript">
+        function addToDisplay(val) {
+            document.getElementById("display").value += val;
+        }
+        function calculate() {
+            var expression = document.getElementById("display").value;
+            var result = eval(expression);
+            document.getElementById("display").value = result;
+        }
+    </script>
+</body>
+</html>
