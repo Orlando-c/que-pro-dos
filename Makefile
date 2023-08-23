@@ -1,10 +1,10 @@
 # Configuration, override port with usage: make PORT=4300
 PORT ?= 4200
-REPO_NAME ?= student
+REPO_NAME ?= queprodos
 LOG_FILE = /tmp/jekyll$(PORT).log
 # Exceptions will stop make
 SHELL = /bin/bash
-.SHELLFLAGS = -e
+#.SHELLFLAGS = -e
 
 # Phony Targets, makefile housekeeping for below definitions
 .PHONY: default server convert clean stop
