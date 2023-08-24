@@ -3,15 +3,81 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
+    <style>  
+      @import url('https://fonts.googleapis.com/css?family=Jost');
+      .button {
+        background-color: #00db6a;
+        font-family: 'Jost';
+        font-size: 24px;
+        width: 30px;
+        color: #fefefe;
+        border: 3px solid #ffffff;
+        border-radius: 8px;
+      }
+          
+      .button:hover {
+          background-color: #00ff7b;
+      }
+
+      a {
+        font-weight: bold;
+        color: #00db6a;
+      }
+          
+      h1 {
+        font-family: 'Jost';
+        font-weight: normal;
+        font-size: 3rem;
+        margin-top: 0;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #00db6a;
+      }
+          
+      input[type=number], select {
+          background-color: #00db6a;
+          color: #fefefe;
+          width: 55px;
+          height: 13px;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 3px solid #fefefe;
+          border-radius: 8px;
+          font-size: 20;
+      }
+          
+      input[type=number]:hover {
+          background-color: #00ff7b;
+      }
+      
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #dedede;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #00db6a;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #00ff7b;
+      }
+      </style>
     <link rel="stylesheet" href="assets/css/print.css">
     <meta charset='utf-8'>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     
   </head>
 
@@ -24,8 +90,9 @@
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         </header>
         <section id="buttons" class="clearfix">
-          <a href="https://orlando-c.github.io/que-pro-dos/calculator.html" class="button"><span>Calculator</span></a>
-          <a href="https://orlando-c.github.io/que-pro-dos/blogs.html" class="button"><span>Blogs</span></a>
+          <a href="{{ site.baseurl }}/" class="button"><span>Home</span></a>
+          <a href="{{ site.baseurl }}/calc.html" class="button"><span>Calculator</span></a>
+          <a href="{{ site.baseurl }}/blogs.html" class="button"><span>Blogs</span></a>
         </section>
 	{% if site.github.public %}
 	  {% if site.github.is_project_page %}

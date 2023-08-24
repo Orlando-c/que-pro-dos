@@ -5,11 +5,10 @@ layout: default
 <!DOCTYPE html>
 <html>
 <head>
-<title>Calculator</title>
 <style>  
 @import url('https://fonts.googleapis.com/css?family=Jost');
 .button {
-  background-color: #006ddb;
+  background-color: #00db6a;
   font-family: 'Jost';
   font-size: 24px;
   width: 30px;
@@ -17,16 +16,19 @@ layout: default
   border: 3px solid #ffffff;
   border-radius: 8px;
 }
-    
-.button:hover {
-    background-color: #3b9dff;
+
+.button1 {
+  background-color: #00db6a;
+  font-family: 'Jost';
+  font-size: 22px;
+  width: 65px;
+  color: #fefefe;
+  border: 3px solid #ffffff;
+  border-radius: 8px;
 }
     
-body {
-  font-family: 'Jost';
-  background: #1a1a1a;
-  color: #fefefe;
-  text-align: center;
+.button:hover {
+    background-color: #00ff7b;
 }
     
 h1 {
@@ -34,11 +36,10 @@ h1 {
   font-weight: normal;
   font-size: 3rem;
   margin-top: 0;
-  text-align: center;
 }
     
 input[type=number], select {
-    background-color: #006ddb;
+    background-color: #00db6a;
     color: #fefefe;
     width: 55px;
     height: 13px;
@@ -51,7 +52,7 @@ input[type=number], select {
 }
     
 input[type=number]:hover {
-    background-color: #3b9dff;
+    background-color: #00ff7b;
 }
 
 ::-webkit-scrollbar {
@@ -59,41 +60,43 @@ input[type=number]:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1d1d1d;
+  background: #dedede;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #006ddb;
+  background: #00db6a;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b9dff;
+  background: #00ff7b;
 }
 </style>
 <head>
     <title>Calculator</title>
 </head>
 <body>
-    <h1>Simple Calculator</h1><br/>
-    <a class="button" href="home.html">Home</a><br/>
     <h1> </h1>
     <input type="text" id="display" disabled><br>
     <button class="button" onclick="addToDisplay('1')">1</button>
     <button class="button" onclick="addToDisplay('2')">2</button>
     <button class="button" onclick="addToDisplay('3')">3</button>
-    <button class="button" onclick="addToDisplay('+')">+</button><br>
+    <button class="button" onclick="addToDisplay('+')">+</button>
+    <button class="button" onclick="addToDisplay('-')">-</button><br>
     <button class="button" onclick="addToDisplay('4')">4</button>
     <button class="button" onclick="addToDisplay('5')">5</button>
     <button class="button" onclick="addToDisplay('6')">6</button>
-    <button class="button" onclick="addToDisplay('-')">-</button><br>
+    <button class="button" onclick="addToDisplay('*')">*</button>
+    <button class="button" onclick="addToDisplay('/')">/</button><br>
     <button class="button" onclick="addToDisplay('7')">7</button>
     <button class="button" onclick="addToDisplay('8')">8</button>
     <button class="button" onclick="addToDisplay('9')">9</button>
-    <button class="button" onclick="addToDisplay('*')">*</button><br>
+    <button class="button" onclick="addToDisplay('^')">^</button>
+    <button class="button" onclick="squareRoot('√')">√</button><br>
+    <button class="button" onclick="addToDisplay('.')">.</button>
     <button class="button" onclick="addToDisplay('0')">0</button>
-    <button class="button" onclick="addToDisplay('/')">/</button>
-    <button class="button" onclick="calculate()">=</button><br>
+    <button class="button" onclick="calculate()">=</button>
+    <button class="button1" onclick="clearDisplay()">Clear</button><br>
     <script type="text/javascript">
         function addToDisplay(val) {
             document.getElementById("display").value += val;
@@ -101,6 +104,19 @@ input[type=number]:hover {
         function calculate() {
             var expression = document.getElementById("display").value;
             var result = eval(expression);
+            document.getElementById("display").value = result;
+        }
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+        function squareRoot() {
+            var expression = document.getElementById("display").value;
+            var result = Math.sqrt(eval(expression));
+            document.getElementById("display").value = result;
+        }
+        function exponential() {
+            var expression = document.getElementById("display").value;
+            var result = Math.pow(eval(expression), 2);
             document.getElementById("display").value = result;
         }
     </script>

@@ -121,3 +121,7 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 The final element.
 ```
+
+### Welcome!
+
+Welcome to my github page! Feel free to use any utilities on my site or go to my github repository and copy my working code. 
