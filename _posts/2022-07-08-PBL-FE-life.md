@@ -4,6 +4,7 @@ layout: default
 description: A remix of Conway's game of life using timer, onclick and algorithms.
 permalink: /frontend/life
 tags: [javascript]
+type: hacks\n
 ---
 
 {% comment %}

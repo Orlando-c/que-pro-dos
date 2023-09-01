@@ -3,6 +3,7 @@ title: JS Calculator
 layout: default
 description: A common way to become familiar with a language is to build a calculator.  This calculator shows off button with actions.
 permalink: /techtalk/home_style
+type: hacks\n
 ---
 
 <!-- 
