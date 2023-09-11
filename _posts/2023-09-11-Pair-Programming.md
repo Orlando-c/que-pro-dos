@@ -1,7 +1,7 @@
 ---
 comments: True
 layout: post
-title: Adventure Capitalist
+title: Adventure Capitalist Pair Program Planning
 description: A classical ripoff of Adventure Capitalist.
 type: hacks
 courses: { csa: {'week': 3}}
