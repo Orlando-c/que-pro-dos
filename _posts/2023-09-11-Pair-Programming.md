@@ -72,3 +72,11 @@ categories: ['C4.1']
 
 # Optimizations:
 16. You've implemented optimizations, such as calculating money per second and handling passive income from businesses. This adds depth to the gameplay. 
+
+
+### Issues and things to improve on
+
+# Money Per Second and Reset button not working
+- One of the issues we've been having is getting the reset button to work with fully reseting all aspects such as bought businesses. Our let statements havent been working in the function and esentially ignoring them.
+
+- Money Per Second was originally working but was broken when code was combined with new code. My new solution rather than using complicated math to calcuate it is to add up all of the businesses you have and multiply it through there rather than going a more complicated route.
