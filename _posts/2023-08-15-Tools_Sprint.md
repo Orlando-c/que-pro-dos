@@ -7,7 +7,8 @@ description: Become one with your tools.  They could be more important than code
 type: plans
 courses: { csse: {week: 0}, csp: {week: 0, categories: [4.A]}, csa: {week: 0} }
 categories: [C1.4]
-type: hacks\n
+courses: { csa: {week: 1} }
+type: hacks
 ---
 
 ### PBL Sprint 0 / Week 0
