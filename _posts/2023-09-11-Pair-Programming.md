@@ -26,52 +26,52 @@ categories: ['C4.1']
 ### ChatGPT College Board Review and Comments
 
 # HTML and CSS Styling:
-1. Your use of HTML and CSS for structuring and styling the web page is well done. Properly structured HTML and CSS are important foundational skills in web development.
+- Your use of HTML and CSS for structuring and styling the web page is well done. Properly structured HTML and CSS are important foundational skills in web development.
 
 # JavaScript Functions:
-2. You've defined various JavaScript functions to handle different aspects of the game logic. This demonstrates your understanding of organizing code into functions, a fundamental concept in programming.
+- You've defined various JavaScript functions to handle different aspects of the game logic. This demonstrates your understanding of organizing code into functions, a fundamental concept in programming.
 
 # Event Listeners:
-3. You've utilized event listeners to respond to user interactions like button clicks. Event handling is a key concept, and you've implemented it effectively.
+- You've utilized event listeners to respond to user interactions like button clicks. Event handling is a key concept, and you've implemented it effectively.
 
 # Cookies:
-4. You've used cookies to store and retrieve information (e.g., the username and highest score). This shows knowledge of handling browser cookies, which can be useful in web applications.
+- You've used cookies to store and retrieve information (e.g., the username and highest score). This shows knowledge of handling browser cookies, which can be useful in web applications.
 
 # DOM Manipulation:
-5. You manipulate the Document Object Model (DOM) to update and display information dynamically. This is a fundamental skill for web development and is necessary for creating interactive web pages.
+- You manipulate the Document Object Model (DOM) to update and display information dynamically. This is a fundamental skill for web development and is necessary for creating interactive web pages.
 
 # Game Logic:
-6. Your game includes features like clicking to earn money, purchasing businesses, and calculating income per second. These elements demonstrate the application of basic game logic.
+- Your game includes features like clicking to earn money, purchasing businesses, and calculating income per second. These elements demonstrate the application of basic game logic.
 
 # Conditional Statements:
-7. You use conditional statements (e.g., if statements) to check conditions and make decisions. This is a core programming concept and is used effectively in your code.
+- You use conditional statements (e.g., if statements) to check conditions and make decisions. This is a core programming concept and is used effectively in your code.
 
 # Loops:
-8. You've used loops, such as setInterval, to create periodic updates in the game (e.g., income from businesses). Loops are important for managing game dynamics.
+- You've used loops, such as setInterval, to create periodic updates in the game (e.g., income from businesses). Loops are important for managing game dynamics.
 
 # Data Structures:
-9. Your use of arrays (playerBusinesses) to store and manage player-owned businesses showcases knowledge of data structures, an essential concept in programming.
+- Your use of arrays (playerBusinesses) to store and manage player-owned businesses showcases knowledge of data structures, an essential concept in programming.
 
 # Time Handling:
-10. You manage time within the game by tracking the start and end times. Handling time is a common requirement in game development and other applications.
+- You manage time within the game by tracking the start and end times. Handling time is a common requirement in game development and other applications.
 
 # User Interface (UI):
-11. Your UI design, including buttons and labels, is clear and user-friendly. Good UI design is crucial for user engagement.
+- Your UI design, including buttons and labels, is clear and user-friendly. Good UI design is crucial for user engagement.
 
 # Comments:
-12. You've added comments at various points in your code to explain its functionality. This is a good practice for code readability and documentation.
+- You've added comments at various points in your code to explain its functionality. This is a good practice for code readability and documentation.
 
 # Error Handling:
-13. You handle cases where the user may not have enough money to purchase a business or where the game timer runs out. Error handling is an important aspect of software development.
+- You handle cases where the user may not have enough money to purchase a business or where the game timer runs out. Error handling is an important aspect of software development.
 
 # Scalability:
-14. Your code allows for scalability by adding more businesses to the game dynamically. This demonstrates an understanding of code design for extensibility.
+- Your code allows for scalability by adding more businesses to the game dynamically. This demonstrates an understanding of code design for extensibility.
 
 # Overall Structure:
-15. Your code is well-organized, with clear separation of concerns between HTML, CSS, and JavaScript. This is good practice for maintainable code.
+- Your code is well-organized, with clear separation of concerns between HTML, CSS, and JavaScript. This is good practice for maintainable code.
 
 # Optimizations:
-16. You've implemented optimizations, such as calculating money per second and handling passive income from businesses. This adds depth to the gameplay. 
+- You've implemented optimizations, such as calculating money per second and handling passive income from businesses. This adds depth to the gameplay. 
 
 
 ### Issues and things to improve on
