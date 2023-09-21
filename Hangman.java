@@ -17,7 +17,7 @@ public class Hangman {
                 playerGuess[i] = '_';
             }
             boolean wordIsGuessed = false;
-            int tries = 0;
+            int tries = 2;
             while (!wordIsGuessed && tries != wordLength) {
                 System.out.println("Current guesses: ");
                 printArray(playerGuess);
