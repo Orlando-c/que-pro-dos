@@ -1,0 +1,39 @@
+// Define some variables for colors and fonts
+$primary-color: #004BB4;
+$secondary-color: #FFC107;
+$ubuntu-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+$nunito-font: 'Nunito', 'Arial', 'Helvetica', sans-serif;
+
+// Define a mixin for creating buttons with different styles
+@mixin button($color, $text-color, $border-radius) {
+  background-color: $color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: $border-radius;
+  font-family: $nunito-font;
+  cursor: pointer;
+}
+
+// Use nesting to group related selectors and avoid repetition
+.container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: $ubuntu-font;
+  // Use variables to apply consistent styles
+  h1 {
+    color: $primary-color;
+    text-align: center;
+  }
+  p {
+    color: $secondary-color;
+    font-size: 18px;
+  }
+  // Use the button mixin to create different buttons with one line of code
+  .primary-button {
+    @include button($primary-color, white, 5px);
+  }
+  .secondary-button {
+    @include button($secondary-color, black, 10px);
+  }
+}
